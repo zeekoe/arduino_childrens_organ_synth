@@ -17,7 +17,9 @@ enum waveform
 namespace Waves
 {
 void init(uint8_t waveform = SINE, uint8_t duty_cycle = 50, uint8_t *envelope = NULL);
-void play(uint16_t freq, uint16_t duration);
+void reinit(uint8_t waveform = SINE, uint8_t duty_cycle = 50, uint8_t *envelope = NULL);
+void play(uint16_t freq, uint16_t duration, uint8_t volume);
+void stop();
 
 //Returns true while note is playing
 boolean isPlaying();
