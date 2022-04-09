@@ -4,10 +4,20 @@ All of the hard work was done in [this project](https://create.arduino.cc/projec
 
 It has two voices, and aims to be parent-friendly (= not too loud). A video of the toy in action can be found [here](https://player.vimeo.com/video/697678995).
 
-![](pictures/organ.jpg)
+![organ](pictures/organ.jpg)
 
-![](pictures/amplifier.jpg)
+![amplifier](pictures/amplifier.jpg)
 
+## Schematic
+
+![schematic](pictures/schematic.jpg)
+
+[The original project](https://create.arduino.cc/projecthub/michalin70/arduino-as-waveform-synthesizer-for-music-2aa48f) has a fancy amplifier/filter end stage. You can build that for proper sound.
+However, I wanted to try if I could build something with minimal components that I already had. A PC speaker seems to work well. The inertia of the speaker does some poor man's filtering. The transistor can be a regular NPN, for example a BC550.
+
+All the buttons are connected to the D*nn*-ports and ground. You can choose to connect the speaker to 5V instead of 3V3 for louder sound.
+
+Disclaimer: the speaker may run a bit out of specifications. Don't blame me if it blows up...
 
 # License
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
